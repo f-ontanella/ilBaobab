@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  line-height: 1.88;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+/* start of the navbar section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+.logo img {
+  height: 80px;
+  margin: 0.5rem;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  padding-right: 5px;
+}
+li a {
+  text-decoration: none;
+  font-size: 18px; /* have to add this so the text doesn't fall on another line */
+  color: black;
+  padding: 10px 16px;
+  display: block;
+}
+li a:hover {
+  font-weight: bold;
+  color: rgb(252, 209, 39);
+  border: 1px solid rgb(252, 209, 39);
+  border-radius: 8px;
+}
+@media (max-width: 520px) {
+  .navbar {
+    margin-bottom: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links ul {
+    text-align: center;
+    padding: 2px;
+    gap: 4px;
+    padding-right: 0px;
+  }
+  li a {
+    font-size: 19px;
+    color: rgb(252 209 39);
+    border: 1px solid rgb(252 209 39);
+    border-radius: 8px;
+  }
+  li a:hover {
+    background-color: white;
+    border: 1px solid rgb(252 209 39);
+    border-radius: 8px;
+  }
+}
+@media (max-width: 430px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logo img {
+    height: 100px;
+  }
+  .nav-links ul {
+    gap: 8px;
+    padding: 1px;
+    margin-bottom: 4px;
+    justify-content: center;
+  }
+  li a {
+    font-size: 18px;
+    padding: 8px 25px;
+  }
+}
+@media (max-width: 420px) {
+  .nav-links ul {
+    padding: 1px;
+    margin-bottom: 4px;
+    justify-content: center;
+  }
+  li a {
+    padding: 8px 23px;
+  }
+}
+@media (max-width: 399px) {
+  .nav-links ul {
+    padding: 1px;
+    margin-bottom: 4px;
+    justify-content: center;
+  }
+  li a {
+    padding: 8px 21px;
+  }
+}
+@media (max-width: 377px) {
+  .nav-links ul {
+    gap: 6px;
+    padding: 1px;
+    margin-bottom: 4px;
+    justify-content: center;
+  }
+  li a {
+    font-size: 17.4px;
+    padding: 7px 20px;
+  }
+}
+@media (max-width: 367px) {
+  li a {
+    padding: 7px 18px;
+  }
+}
+@media (max-width: 350px) {
+  li a {
+    padding: 6px 17px;
+  }
+}
+@media (max-width: 337px) {
+  .nav-links ul {
+    gap: 5px;
+  }
+  li a {
+    padding: 6px 16px;
+  }
+}
+@media (max-width: 320px) {
+  li a {
+    font-size: 16.7px;
+    padding: 5px 15px;
+  }
+}
+@media (max-width: 294px) {
+  li a {
+    font-size: 15.5px;
+    padding: 5px 13px;
+  }
+}
+@media (max-width: 283px) {
+  li a {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 262px) {
+  .nav-links ul {
+    gap: 4px;
+  }
+  li a {
+    padding: 5px 11px;
+  }
+}
+@media (max-width: 255px) {
+  li a {
+    font-size: 13.8px;
+  }
+}
+@media (max-width: 249px) {
+  li a {
+    font-size: 13.2px;
+    padding: 4px 9px;
+  }
+}
+@media (max-width: 236px) {
+  li a {
+    font-size: 12.9px;
+  }
+}
+@media (max-width: 229px) {
+  .nav-links ul {
+    gap: 3.5px;
+  }
+  li a {
+    font-size: 12.2px;
+  }
+}
+@media (max-width: 217px) {
+  li a {
+    font-size: 12.1px;
+    padding: 4px 7px;
+  }
+}
+@media (max-width: 200px) {
+  li a {
+    font-size: 11.9px;
+    padding: 4px 5px;
+  }
+}
+/* end of the navbar section */
+
+/*start of the main section */
+.main-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 70vh;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.esempio {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.imgPlace {
+  background-color: rgb(213, 213, 213);
+  height: 400px;
+  width: 550px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.esempio h2,
+.esempio p {
+  padding: 0px 18px;
+}
+@media (max-width: 830px) {
+  .imgPlace {
+    height: 350px;
+    width: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .main-column {
+    margin-top: 20px;
+  }
+  .imgPlace {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .imgPlace {
+    height: 240px;
+    width: 280px;
+  }
+}
+@media (max-width: 285px) {
+  .imgPlace {
+    height: 200px;
+    width: 240px;
+  }
+}
+@media (max-width: 247px) {
+  .imgPlace {
+    height: 170px;
+    width: 220px;
+  }
+}
+@media (max-width: 221px) {
+  .imgPlace {
+    height: 140px;
+    width: 180px;
+  }
+}
+/* end of the main section */
+
+/* start of the footer section */
+footer {
+  display: flex;
+  flex: 0; /* this is what's different from the index stylesheet */
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f2f0;
+  color: black;
+  margin: 0;
+}
+
+.contatti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 20vh; /* this is also different from the index stylesheet */
+  margin: 20px;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  min-width: 100%;
+  gap: 55px;
+  margin-bottom: 20px;
+}
+.left-row,
+.center-row,
+.right-row {
+  padding: 3px;
+}
+footer p {
+  font-size: 16px;
+}
+footer h2 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+footer h3 {
+  font-size: 18px;
+}
+hr {
+  width: 98%; /* because we are in a flexbox the hr tag behaves differently that expected and we need to specify the width */
+  border: 1px solid black;
+}
+.made-by {
+  margin: 15px;
+}
+.made-by p {
+  font-size: 13px;
+}
+@media (max-width: 450px) {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  footer p {
+    font-size: 14px;
+  }
+  footer h2 {
+    font-size: 17px;
+  }
+  footer h3 {
+    font-size: 15px;
+  }
+}

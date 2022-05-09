@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  line-height: 1.88;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+
+/* start of the navbar section */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+.logo img {
+  height: 80px;
+  margin: 0.5rem;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+  padding-right: 5px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 16px;
+  font-size: 18px;
+}
+li a:hover {
+  font-weight: bold;
+  color: rgb(252, 209, 39);
+  border: 1px solid rgb(252, 209, 39);
+  border-radius: 8px;
+}
+@media (max-width: 520px) {
+  .navbar {
+    margin-bottom: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links ul {
+    text-align: center;
+    padding: 2px;
+    gap: 4px;
+    padding-right: 0px;
+  }
+  li a {
+    font-size: 19px;
+    color: rgb(252, 209, 39);
+    border: 1px solid rgb(252, 209, 39);
+    border-radius: 8px;
+  }
+  li a:hover {
+    background-color: white;
+    border: 1px solid rgb(252, 209, 39);
+    border-radius: 8px;
+  }
+}
+@media (max-width: 430px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logo img {
+    height: 100px;
+  }
+  .nav-links ul {
+    gap: 8px;
+    padding: 1px;
+    margin-bottom: 4px;
+    justify-content: center;
+  }
+  li a {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 355px) {
+  li a {
+    padding: 10px 18px;
+  }
+}
+@media (max-width: 332px) {
+  .nav-links ul {
+    gap: 7px;
+  }
+  li a {
+    padding: 10px 17px;
+  }
+}
+@media (max-width: 316px) {
+  li a {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 303px) {
+  li a {
+    padding: 8px 13px;
+  }
+}
+@media (max-width: 291px) {
+  li a {
+    font-size: 17.5px;
+    padding: 7px 13px;
+  }
+}
+@media (max-width: 282px) {
+  .nav-links ul {
+    gap: 6px;
+  }
+  li a {
+    padding: 7px 11px;
+  }
+}
+@media (max-width: 270px) {
+  li a {
+    font-size: 16.3px;
+    padding: 7px 9.8px;
+  }
+}
+@media (max-width: 253px) {
+  .nav-links ul {
+    gap: 5px;
+  }
+  li a {
+    font-size: 16px;
+    padding: 7px 9.3px;
+  }
+}
+@media (max-width: 242px) {
+  .nav-links ul {
+    gap: 4px;
+  }
+  li a {
+    font-size: 14.9px;
+  }
+}
+@media (max-width: 227px) {
+  .nav-links ul {
+    gap: 3px;
+  }
+  li a {
+    font-size: 14.3px;
+    padding: 7px 7px;
+  }
+}
+@media (max-width: 217px) {
+  li a {
+    font-size: 12.1px;
+    padding: 7px 8px;
+  }
+}
+@media (max-width: 211px) {
+  li a {
+    font-size: 11.8px;
+    padding: 7px 7.1px;
+  }
+}
+@media (max-width: 200px) {
+  li a {
+    font-size: 11.8px;
+    padding: 7px 6px;
+  }
+}
+/* end of the navbar section */
+
+/* start of the what-we-offer section */
+.what-we-offer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+/* end of the what-we-offer section*/
+
+/*start of the intro section*/
+.intro {
+  padding: 35px 65px;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .intro {
+    padding: 20px;
+  }
+}
+/*end of the intro section*/
+
+/*start of the areas section*/
+.areas {
+  display: flex;
+  flex-direction: column;
+}
+.areas h2 {
+  font-size: 30px;
+  padding: 0px 20px;
+  margin-top: 30px;
+}
+.areas p {
+  line-height: 39px;
+}
+@media (max-width: 425px) {
+  .areas h2 {
+    font-size: 25px;
+  }
+}
+/*end of the areas section*/
+
+/*start of the ludica section*/
+.ludica {
+  padding: 0px 35px;
+}
+.title-ludica h3 {
+  margin-top: 15px;
+}
+.title-ludica h5 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+@media (max-width: 425px) {
+  .ludica {
+    padding: 0px 27px;
+  }
+}
+/*end of the ludica section*/
+
+/*start of the didattica section*/
+.didattica {
+  padding: 0px 35px;
+}
+.title-didattica h3 {
+  margin-top: 25px;
+}
+.title-didattica h5 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+@media (max-width: 425px) {
+  .didattica {
+    padding: 0px 27px;
+  }
+}
+/*end of the didattica section*/
+
+/*start of the other section*/
+.other {
+  padding: 0 20px;
+  margin-top: 45px;
+  line-height: 46px;
+}
+.example {
+  max-width: 100%;
+  height: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  border-radius: 25px;
+}
+.other p {
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 430px) {
+  .example {
+    display: none;
+  }
+}
+/*end of the other section*/
+
+/* start of the footer section */
+footer {
+  display: flex;
+  flex: 0; /* this is what's different from the index stylesheet */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f3f2f0;
+  color: black;
+  min-width: 100%;
+}
+.contatti {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 20vh; /* this is also different from the index stylesheet */
+  margin: 20px;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  min-width: 100%;
+  gap: 55px;
+  margin-bottom: 20px;
+}
+.left-row,
+.center-row,
+.right-row {
+  padding: 3px;
+}
+footer p {
+  font-size: 16px;
+}
+footer h2 {
+  font-size: 20px;
+}
+footer h3 {
+  font-size: 18px;
+}
+hr {
+  width: 98%; /* because we are in a flexbox the hr tag behaves differently that expected and we need to specify the width */
+  border: 1px solid black;
+}
+.made-by {
+  margin: 15px;
+}
+.made-by p {
+  font-size: 13px;
+}
+@media (max-width: 450px) {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  footer p {
+    font-size: 14px;
+  }
+  footer h2 {
+    font-size: 17px;
+  }
+  footer h3 {
+    font-size: 15px;
+  }
+}
