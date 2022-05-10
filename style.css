@@ -408,14 +408,6 @@ hr {
 .made-by p {
   font-size: 13px;
 }
-.p-iva {
-  color: inherit !important;
-  text-decoration: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit !important;
-}
 @media (max-width: 450px) {
   .rows {
     display: flex;
@@ -428,6 +420,12 @@ hr {
     min-width: 100%;
     margin: 0;
     padding: 0;
+  }
+  .p-iva {
+    color: black;
+    text-decoration: none !important;
+    font-size: 14.9px;
+    font-family: "Open Sans", sans-serif;
   }
 }
 @media (max-width: 320px) {
